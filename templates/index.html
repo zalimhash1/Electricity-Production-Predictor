@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electricity Production</title>
+    <link rel="icon" href="images/lightning.png?v=2">
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="images/lightning.png" alt="lightning">
+        </div>
+        <a href="#"><h1>PREDICT<span> Electricity Production </span> DATA</h1></a>
+    </nav>
+    <div class="space"></div>
+    <div class="hero-section">
+        <small>An intelligent electricity production prediction system that uses historical energy data and machine learning to estimate electricity production based on country, year, month, and energy product.</small>
+        <button class="hero-btn">Predict Now</button>
+    </div>
+
+    <form class="prediction">
+        <label for="country">Country</label>
+        <select class="country" name="COUNTRY" required>
+            <option value="">Select Country</option>
+            <option value="Australia">Australia</option>
+            <option value="Austria">Austria</option>
+            <option value="Canada">Canada</option>
+            <option value="Czech Republic">Czech Republic</option>
+            <option value="Denmark">Denmark</option>
+            <option value="Germany">Germany</option>
+            <option value="New Zealand">New Zealand</option>
+            <option value="OECD Asia Oceania">OECD Asia Oceania</option>
+            <option value="OECD Europe">OECD Europe</option>
+            <option value="Poland">Poland</option>
+            <option value="Republic of Turkiye">Republic of Turkiye</option>
+            <option value="Slovenia">Slovenia</option>
+            <option value="Spain">Spain</option>
+            <option value="Belgium">Belgium</option>
+            <option value="Finland">Finland</option>
+            <option value="Greece">Greece</option>
+            <option value="IEA Total">IEA Total</option>
+            <option value="Iceland">Iceland</option>
+            <option value="Japan">Japan</option>
+            <option value="Netherlands">Netherlands</option>
+            <option value="Norway">Norway</option>
+            <option value="OECD Americas">OECD Americas</option>
+            <option value="Portugal">Portugal</option>
+            <option value="Slovak Republic">Slovak Republic</option>
+            <option value="Sweden">Sweden</option>
+            <option value="United States">United States</option>
+            <option value="Estonia">Estonia</option>
+            <option value="Ireland">Ireland</option>
+            <option value="Korea">Korea</option>
+            <option value="OECD Total">OECD Total</option>
+            <option value="Switzerland">Switzerland</option>
+            <option value="Chile">Chile</option>
+            <option value="Italy">Italy</option>
+            <option value="Latvia">Latvia</option>
+            <option value="Lithuania">Lithuania</option>
+            <option value="Luxembourg">Luxembourg</option>
+            <option value="Mexico">Mexico</option>
+            <option value="France">France</option>
+            <option value="Hungary">Hungary</option>
+            <option value="United Kingdom">United Kingdom</option>
+            <option value="Colombia">Colombia</option>
+            <option value="Malta">Malta</option>
+            <option value="Serbia">Serbia</option>
+            <option value="Bulgaria">Bulgaria</option>
+            <option value="Cyprus">Cyprus</option>
+            <option value="North Macedonia">North Macedonia</option>
+            <option value="Romania">Romania</option>
+            <option value="Brazil">Brazil</option>
+            <option value="India">India</option>
+            <option value="Croatia">Croatia</option>
+            <option value="Argentina">Argentina</option>
+            <option value="Costa Rica">Costa Rica</option>
+        </select>
+
+        <label for="year">YEAR</label>
+        <input type="number" name="YEAR" placeholder="Select Year 2010-2022" class="year">
+        <label for="month">MONTH</label>
+        <input type="number" name="MONTH" placeholder="Select Month 1-12" class="month">
+
+        <label for="products">Products</label>
+        <select class="products" name="PRODUCT" required>
+            <option value="">Select Product</option>
+            <option value="Final consumption">Final consumption</option>
+            <option value="Low carbon">Low carbon</option>
+            <option value="Wind">Wind</option>
+            <option value="Not specified">Not specified</option>
+            <option value="Non-renewables">Non-renewables</option>
+            <option value="Oil">Oil</option>
+            <option value="Total imports">Total imports</option>
+            <option value="Electricity supplied">Electricity supplied</option>
+            <option value="Coal">Coal</option>
+            <option value="Total exports">Total exports</option>
+            <option value="Fossil fuels">Fossil fuels</option>
+            <option value="Distribution losses">Distribution losses</option>
+            <option value="Other renewables aggregated">Other renewables aggregated</option>
+            <option value="Hydro">Hydro</option>
+            <option value="Electricity trade">Electricity trade</option>
+            <option value="Renewables">Renewables</option>
+            <option value="Used for pumped storage">Used for pumped storage</option>
+            <option value="Solar">Solar</option>
+            <option value="Geothermal">Geothermal</option>
+            <option value="Total combustible fuels">Total combustible fuels</option>
+            <option value="Other combustible non-renewables">Other combustible non-renewables</option>
+            <option value="Combustible renewables">Combustible renewables</option>
+            <option value="Net electricity production">Net electricity production</option>
+            <option value="Natural gas">Natural gas</option>
+            <option value="Others">Others</option>
+            <option value="Nuclear">Nuclear</option>
+            <option value="Other renewables">Other renewables</option>
+        </select>
+    </form>
+    <div class="pred_button">
+        <button class="pred_btn">Predict</button>
+    </div>
+    <div class="result-box">
+        <h2>Predicted Value:</h2>
+        <p class="result"></p>
+    </div>
+    
+    <footer class="footer">
+        <div class="footer-content">
+
+            <div class="footer-brand">
+                <h2>Electricity Production</h2>
+                <p>Predict electricity production using historical energy data and machine learning.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Project</h3>
+                <a href="#">Home</a>
+                <a href="#prediction">Prediction</a>
+            </div>
+            <div class="footer-info">
+                <h3>Technology</h3>
+                <p>Python</p>
+                <p>FastAPI</p>
+                <p>XGBoost</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Electricity Production Prediction. All rights reserved.</p>
+        </div>
+
+    </footer>
+    <script src="/static/script.js"></script>
+</body>
+</html>
