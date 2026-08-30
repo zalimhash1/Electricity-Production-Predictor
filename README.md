@@ -12,10 +12,10 @@ Electricity production varies depending on different factors such as country, ti
 
 This project uses historical electricity data to train a machine learning model that can estimate electricity production based on four input features:
 
-- Country
-- Year
-- Month
-- Product
+- **Country**
+- **Year**
+- **Month**
+- **Product**
 
 The trained model is saved as a `.pkl` file and integrated into a FastAPI application.
 
@@ -27,10 +27,7 @@ The trained model is saved as a `.pkl` file and integrated into a FastAPI applic
 - 🔹 XGBoost regression model
 - 🔹 FastAPI REST API
 - 🔹 Frontend built with HTML, CSS, and JavaScript
-- 🔹 Input validation using Pydantic
-- 🔹 Country validation
-- 🔹 Product validation
-- 🔹 Year and month validation
+- 🔹 Input validation using Pydantic (Country, Product, Year, Month)
 - 🔹 User-friendly prediction form
 - 🔹 API and frontend integration using JavaScript `fetch()`
 - 🔹 JSON based API communication
@@ -40,7 +37,6 @@ The trained model is saved as a `.pkl` file and integrated into a FastAPI applic
 ## 🛠️ Technologies Used
 
 ### Backend
-
 - Python
 - FastAPI
 - Uvicorn
@@ -50,14 +46,11 @@ The trained model is saved as a `.pkl` file and integrated into a FastAPI applic
 - XGBoost
 
 ### Frontend
-
 - HTML5
 - CSS3
-- JavaScript
-- Fetch API
+- JavaScript (Fetch API)
 
 ### Machine Learning
-
 - XGBoost
 - Scikit-learn
 - Pandas
@@ -83,44 +76,5 @@ Electricity-Production-Prediction/
 └── static/
     ├── style.css
     ├── script.js
-    │
     └── images/
-        └── lightning.png ````
-
-## Machine Learning Workflow
-
-Raw Dataset
-     ↓
-Data Cleaning
-     ↓
-Feature Selection
-     ↓
-Train/Test Split
-     ↓
-Data Preprocessing
-     ↓
-Model Training
-     ↓
-Model Evaluation
-     ↓
-Trained Pipeline
-     ↓
-Save Model as .pkl
-     ↓
-FastAPI Integration
-
-## Run Application
-
-▶️ Run the Application
-
-Start the FastAPI server using Uvicorn:
-
-uvicorn app:app --reload
-
-The API will normally be available at:
-
-http://127.0.0.1:8000
-
-FastAPI documentation is available at:
-
-http://127.0.0.1:8000/docs
+        └── lightning.png
