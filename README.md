@@ -85,7 +85,7 @@ Electricity-Production-Prediction/
     ├── script.js
     │
     └── images/
-        └── lightning.png
+        └── lightning.png ````
 
 ## Machine Learning Workflow
 
