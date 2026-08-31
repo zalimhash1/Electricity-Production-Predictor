@@ -70,11 +70,12 @@ Electricity-Production-Prediction/
 ├── requirements.txt
 ├── README.md
 │
-├── templates/
-│   └── index.html
-│
-└── static/
-    ├── style.css
-    ├── script.js
-    └── images/
-        └── lightning.png
+└── frontend/
+   └── index.html
+   └── images/
+       └── lightning.png
+    └── static/
+        ├── style.css
+        └── script.js
+
+    
