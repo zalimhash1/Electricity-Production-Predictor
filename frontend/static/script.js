@@ -19,7 +19,7 @@ prediction_button.addEventListener('click', function(){
         
     }
     console.log(data)
-    fetch("http://127.0.0.1:8000/predict",{
+    fetch("https://electricity-production-predictor-app.onrender.com/predict",{
         method: "POST",
         headers: {
             "Content-type":"application/json"
